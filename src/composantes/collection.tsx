@@ -1,18 +1,18 @@
 export default function CollectionSection() {
   return (
-    <section className="bg-[#f3eaea] py-20 flex items-center justify-center">
-      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center px-6">
+    <section className=" py-40 flex items-center justify-center">
+      <div className="max-w-7xl w-full grid md:grid-cols-2 gap-10 items-center px-6">
         
         {/* Image */}
-        <div className="flex justify-center bg-[#e9dddd] p-10 ">
+        <div className="flex justify-center bg-[#e9dddd] relative h-[450px]">
           <img
             src="https://websitedemos.net/t-shirts-store-04/wp-content/uploads/sites/1115/2022/07/collection-03-400x563.jpg" // remplace par ton image
             alt="model"
-            className="w-87.5 h-125 object-cover shadow-lg"
+            className=" object-cover shadow-xl absolute top-[-50px]  left-1/2 -translate-x-1/2  h-[450px] rounded"
           />
         </div>
         {/* Texte */}
-        <div className="">
+        <div className="  relative space-y-5  -translate-x-20 z-10 ">
           <p className="text-sm text-gray-500 mb-2">Women</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Spring Summer Collection

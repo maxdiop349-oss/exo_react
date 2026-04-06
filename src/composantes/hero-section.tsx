@@ -1,11 +1,11 @@
 export default function HeroSection() {
   return (
     <section
-      className="h-screen px-6 bg-fixed bg-center bg-cover flex items-center justify-center"
-      style={{
-        backgroundImage:
-    `url('/couple.jpg') ` ,
-      }}
+      className="h-screen mx-6  bg-[url('/couple.jpg')] bg-fixed bg-center bg-cover flex items-center justify-center"
+    //   style={{
+    //     backgroundImage:
+    // `url('/couple.jpg') ` ,
+    //   }}
     >
       {/* Overlay sombre */}
       <div className="bg-black/40 w-full h-full flex items-center justify-center">

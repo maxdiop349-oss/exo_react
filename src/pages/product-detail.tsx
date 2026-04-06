@@ -28,7 +28,7 @@ const products = [
 export default function ProductDetail() {
   const { id } = useParams();
 
-  const product = products.find((p) => p.id === parseInt(id));
+  const product = products.find((p) => p.id === parseInt(id as string));
 
   if (!product) return <h1>Produit non trouvé</h1>;
 
