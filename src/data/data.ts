@@ -8,8 +8,7 @@ import type { MenuItem, Product } from "../type/type";
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
 ];
- export const products: Product[] = [
-      {
+ export const products: Product[] = [      {
         id: 1,
         category: "MEN",
         name: "T-Shirt Name 10",
