@@ -12,4 +12,5 @@ export type Product = {
   discount?: number;
   colors: string[];
   sizes: { value: string; available: boolean }[]; // tableau de tailles + disponibilité
+  description: string;
 };

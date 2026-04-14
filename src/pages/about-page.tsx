@@ -18,10 +18,9 @@ export default function AboutPage() {
         </div>
       </div>
       <section
-        className="bg-fixed bg-[url('/vet.jpg')] bg-center bg-cover min-h-screen flex items-center">
-        {/* Overlay sombre */}
-        <div className=" px-6">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 text-white">
+        className="bg-fixed bg-[url('/vet.jpg')] bg-center bg-cover min-h-screen   flex items-center">
+        <div className=" px-6 ">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10  text-white">
             {/* Paragraphe gauche */}
             <div>
               <h1 className='mb-4 text-xl'>The mission</h1>

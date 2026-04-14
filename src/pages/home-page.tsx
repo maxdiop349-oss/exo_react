@@ -6,6 +6,7 @@ import ReviewSection from '../composantes/review-section';
 import BodySection from '../composantes/body-section';
 import BoySection from '../composantes/boy-section';
 import Product from '../composantes/product';
+import GirlSection from '../composantes/girl-section';
 
 export default function HomePage() {
     return (
@@ -17,6 +18,7 @@ export default function HomePage() {
             <CollectionSection/>
             <Product/>
             <ReviewSection/>
+        <GirlSection/>
            
         </div>
     );

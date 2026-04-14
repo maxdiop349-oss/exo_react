@@ -10,35 +10,52 @@ import ProductDetail from "./pages/product-detail"
 import AuthLayout from "./layouts/Auth-layout"
 import LoginPage from "./pages/auth/login-page"
 import RegisterPage from "./pages/auth/register-page"
+import { Toaster } from "react-hot-toast"
+import DashboardLayout from "./layouts/dashboard-layout"
+import HomeDashboard from "./dashboard/home-dashboard"
+import CreateDashboard from "./dashboard/create-dashboard"
+import ProductDashboard from "./dashboard/product-dashboard"
 
 
 
 function App() {
-  
+
 
   return (
-   
-     <BrowserRouter>
-     
+
+    <BrowserRouter>
+      <Toaster position="top-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<HomeLayout />} >
-         <Route path="/" element={<HomePage />} />
-         <Route path="/product/:id" element={<ProductDetail />} />
-         <Route path="/shop" element={<ShopPage />} />
-        <Route path="/women" element={<WomenPage />} />
-        <Route path="/men" element={<MenPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<Contactpage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/women" element={<WomenPage />} />
+          <Route path="/men" element={<MenPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<Contactpage />} />
         </Route>
-            {/* Route Login */}
-             <Route element={<AuthLayout />}>
+        {/* route dashboard */}
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={
+            <HomeDashboard />
+          } />
+          <Route path="create" element={
+            <CreateDashboard />
+          } />
+          <Route path="products" element={
+            <ProductDashboard />
+          } />
+        </Route>
+        {/* Route Login */}
+        <Route element={<AuthLayout />}>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Route>
-          
+
       </Routes>
-      </BrowserRouter>
-    
+    </BrowserRouter>
+
   )
 }
 

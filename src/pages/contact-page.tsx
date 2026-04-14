@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
 import React, { useState } from 'react'
+import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 
 export default function Contactpage() {
@@ -21,7 +22,7 @@ export default function Contactpage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     localStorage.setItem("formData", JSON.stringify(formData));
-    alert("Formulaire soumis avec succés");
+     toast.success("Formulaire soumis avec succés");
     setFormData({
       email: "",
       firstName: "",

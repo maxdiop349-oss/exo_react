@@ -7,6 +7,7 @@ import type { MenuItem, Product } from "../type/type";
   { name: "Men", path: "/men" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
+  // {name: "Dashboard", path: "/dashboard"},
 ];
  export const products: Product[] = [      {
         id: 1,
@@ -18,9 +19,10 @@ import type { MenuItem, Product } from "../type/type";
          sizes: [
       { value: "XS", available: true },
       { value: "S", available: true },
-      { value: "M", available: false },
+      { value: "M", available: true },
       { value: "L", available: true },
     ],
+    description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
     },
     {
         id: 2,
@@ -32,9 +34,10 @@ import type { MenuItem, Product } from "../type/type";
        sizes: [
       { value: "XS", available: true },
       { value: "S", available: true },
-      { value: "M", available: false },
+      { value: "M", available: true },
       { value: "L", available: true },
-    ],   
+    ], 
+    description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",  
     },
     {
         id: 3,
@@ -46,9 +49,10 @@ import type { MenuItem, Product } from "../type/type";
        sizes: [
       { value: "XS", available: true },
       { value: "S", available: true },
-      { value: "M", available: false },
+      { value: "M", available: true },
       { value: "L", available: true },
-    ],  
+    ], 
+    description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.", 
     },
     {
         id: 4,
@@ -61,9 +65,10 @@ import type { MenuItem, Product } from "../type/type";
        sizes: [
       { value: "XS", available: true },
       { value: "S", available: true },
-      { value: "M", available: false },
+      { value: "M", available: true },
       { value: "L", available: true },
     ],
+     description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
         }, 
     {
       id: 5,
@@ -79,6 +84,7 @@ import type { MenuItem, Product } from "../type/type";
       { value: "M", available: false },
       { value: "L", available: true },
     ],
+     description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
       },
     {
       id: 6,
@@ -94,6 +100,7 @@ import type { MenuItem, Product } from "../type/type";
       { value: "M", available: false },
       { value: "L", available: true },
     ],
+    description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
       },
     {
       id: 7,
@@ -109,6 +116,7 @@ import type { MenuItem, Product } from "../type/type";
       { value: "M", available: false },
       { value: "L", available: true },
     ],
+    description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
       },
     {
       id: 8,
@@ -124,6 +132,7 @@ import type { MenuItem, Product } from "../type/type";
       { value: "M", available: false },
       { value: "L", available: true },
     ],
+    description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
       },
       {
   id: 9,
@@ -138,6 +147,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "M", available: true },
     { value: "L", available: true },
   ],
+   description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 10,
@@ -151,10 +161,11 @@ import type { MenuItem, Product } from "../type/type";
     { value: "S", available: true },
     { value: "M", available: true },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 11,
-  category: "MEN",
+  category: "WOMEN",
   name: "T-Shirt Name 13",
   price: "$28.00 - $32.00",
   image: "https://websitedemos.net/t-shirts-store-04/wp-content/uploads/sites/1115/2022/07/product-07-a.jpg",
@@ -164,6 +175,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "M", available: true },
     { value: "L", available: true },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 12,
@@ -176,6 +188,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "S", available: true },
     { value: "M", available: false },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 13,
@@ -189,6 +202,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "M", available: true },
     { value: "L", available: true },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 14,
@@ -201,6 +215,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "XS", available: true },
     { value: "S", available: true },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 15,
@@ -214,6 +229,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "S", available: true },
     { value: "M", available: true },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 16,
@@ -226,6 +242,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "S", available: true },
     { value: "M", available: true },
   ],
+   description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 17,
@@ -237,8 +254,9 @@ import type { MenuItem, Product } from "../type/type";
   colors: ["bg-black", "bg-red-300"],
   sizes: [
     { value: "M", available: true },
-    { value: "L", available: true },
+    { value: "L", available: true },   
   ],
+   description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 18,
@@ -251,6 +269,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "XS", available: true },
     { value: "S", available: true },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 19,
@@ -264,6 +283,7 @@ import type { MenuItem, Product } from "../type/type";
     { value: "S", available: true },
     { value: "M", available: true },
   ],
+    description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 },
 {
   id: 20,
@@ -276,5 +296,6 @@ import type { MenuItem, Product } from "../type/type";
     { value: "S", available: true },
     { value: "M", available: true },
   ],
+  description: "Ce t-shirt est fabriqué en coton de haute qualité, confortable et parfait pour un usage quotidien.",
 }
   ];

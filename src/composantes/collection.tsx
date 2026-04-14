@@ -2,7 +2,6 @@ export default function CollectionSection() {
   return (
     <section className=" py-40 flex items-center justify-center">
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-10 items-center px-6">
-        
         {/* Image */}
         <div className="flex justify-center bg-[#e9dddd] relative h-[450px]">
           <img
@@ -14,7 +13,7 @@ export default function CollectionSection() {
         {/* Texte */}
         <div className="  relative space-y-5  -translate-x-20 z-10 ">
           <p className="text-sm text-gray-500 mb-2">Women</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold  mb-3">
             Spring Summer Collection
           </h2>
           <p className="text-gray-600 mb-6">

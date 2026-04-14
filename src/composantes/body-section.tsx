@@ -10,7 +10,7 @@ export default function BodySection() {
                     <div className="space-y-6">
                         <p className="text-sm text-gray-600">Women</p>
 
-                        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                        <h1 className="text-4xl md:text-6xl   font-bold leading-tight">
                             Slick. Modern. <br />
                             Awesome.
                         </h1>
