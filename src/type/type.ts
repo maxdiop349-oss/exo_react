@@ -14,3 +14,10 @@ export type Product = {
   sizes: { value: string; available: boolean }[]; // tableau de tailles + disponibilité
   description: string;
 };
+ export type FormType = {
+  name: string;
+  price: string;
+  description: string;
+  category: string;
+  image: File | null;
+};

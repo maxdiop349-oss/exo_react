@@ -1,9 +1,10 @@
-import { ShoppingCart } from "lucide-react";
+import { Eye, EyeOff, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 export default function Login() {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -43,11 +44,24 @@ export default function Login() {
             required
             value={formData.email}
             onChange={handleChange} />
-          <input type="password" placeholder="Password" className="border p-2 rounded"
-            name="password"
-            required
-            value={formData.password}
-            onChange={handleChange} />
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              className="border p-2 rounded w-full pr-10"
+              name="password"
+              required
+              value={formData.password}
+              onChange={handleChange}
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-black"
+            >
+              {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+            </button>
+          </div>
           <button className="bg-black text-white py-2 rounded">
             Login
           </button>
